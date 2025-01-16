@@ -1,0 +1,24 @@
+
+import { Schema, model } from "mongoose";
+
+const todoSchema = new Schema(
+    {
+        todoContent: { type: String, required: true },
+        ip: { type: String }
+        // owner/todoAddBy: { type: Schema.ObjectId, ref: "User" },
+    },
+    { timestamps: true },
+);
+
+
+export const Todo = model("Todo", todoSchema);
+
+
+// import { Schema, model } from "mongoose";
+
+// const todoSchema = new Schema(
+//   {
+//     todoContent: { type: String, required: true },
+//     ip: { type: String,
+// }})
+// export const Todo = model("Todo", todoSchema);
