@@ -3,8 +3,8 @@ import "./App.css";
 import axios from "axios";
 import toast from "react-hot-toast";
 const App = () => {
-  // const base_url = "https://todos-backend-5kwp.vercel.app";
-  const base_url = "http://localhost:3000";
+  const base_url = "https://todo-backend-mongo-db-a5mz.vercel.app";
+ // const base_url = "http://localhost:3000";
   const [todos, setTodos] = useState([]);
   // const [isEdit, setIsEdit] = useState(false);
   // const [inptodo, setInptodo] = useState(null);
